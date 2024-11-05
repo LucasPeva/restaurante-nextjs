@@ -8,11 +8,23 @@
 
 ## Informação geral
 
-Sistema web feito com Next JS para um site de restaurante.
+Sistema web feito com Next JS para um site de restaurante, utilizando tecnologias em demanda no mercado atual, notavelmente [Next.js](https://nextjs.org), [React](https://react.dev/) e [MongoDB](https://mongodb.com).
 
-## Construindo o app (build)
+## Testando o app
 
-Primeiro, inicie um servidor de desenvolvimento:
+### Instale as dependências
+
+No local raiz do repositório (~/restaurante-nextjs), instale as dependências com:
+
+```bash
+# Se tiver problemas, use npm install --force
+npm install
+# Ou
+yarn install
+```
+### Servidor de testes
+
+Inicie o servidor de desenvolvimento com:
 
 ```bash
 npm run dev
@@ -24,4 +36,14 @@ pnpm dev
 bun dev
 ```
 
-Depois, abra [http://localhost:3000](http://localhost:3000) com seu navegador para ver o resultado.
+### Resultado final
+
+Abra [http://localhost:3000](http://localhost:3000) com seu navegador para ver o resultado.
+
+## Créditos
+
+Código original feito por [Dawid Paszko](https://github.com/dejwid).
+
+[Link para tutorial em vídeo no Youtube](https://www.youtube.com/watch?v=nGoSP3MBV2E) *em inglês*
+
+Tradução feita por [Lucas Soares Pevarello](https://github.com/LucasPeva) e [Marcelo Soares Pevarello](email:marceloelucaspevarello@gmail.com)
