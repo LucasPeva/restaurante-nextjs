@@ -31,7 +31,7 @@ export default function RegisterPage() {
   return (
     <section className="mt-8">
       <h1 className="text-center text-primary text-4xl mb-4">
-        Register
+        Criar conta
       </h1>
       {userCreated && (
         <div className="my-4 text-center">
@@ -50,24 +50,24 @@ export default function RegisterPage() {
         <input type="email" placeholder="email" value={email}
                disabled={creatingUser}
                onChange={ev => setEmail(ev.target.value)} />
-        <input type="password" placeholder="password" value={password}
+        <input type="password" placeholder="senha" value={password}
                disabled={creatingUser}
                 onChange={ev => setPassword(ev.target.value)}/>
         <button type="submit" disabled={creatingUser}>
-          Register
+          Criar conta
         </button>
         <div className="my-4 text-center text-gray-500">
-          or login with provider
+          ou entre com outro serviço
         </div>
         <button
           onClick={() => signIn('google', {callbackUrl:'/'})}
           className="flex gap-4 justify-center">
           <Image src={'/google.png'} alt={''} width={24} height={24} />
-          Login with google
+          Entre com google
         </button>
         <div className="text-center my-4 text-gray-500 border-t pt-4">
-          Existing account?{' '}
-          <Link className="underline" href={'/login'}>Login here &raquo;</Link>
+          Já tem uma conta?{' '}
+          <Link className="underline" href={'/login'}>Faça login &raquo;</Link>
         </div>
       </form>
     </section>
