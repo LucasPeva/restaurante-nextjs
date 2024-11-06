@@ -10,25 +10,25 @@ export default function Home() {
       <HomeMenu />
       <section className="text-center my-16" id="about">
         <SectionHeaders
-          subHeader={'Our story'}
-          mainHeader={'About us'}
+          subHeader={'Nossa história'}
+          mainHeader={'Sobre nós'}
         />
         <div className="text-gray-500 max-w-md mx-auto mt-4 flex flex-col gap-4">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni minima odit recusandae. Illum ipsa non repudiandae? Eum ipsam iste quos suscipit tempora? Aperiam esse fugiat inventore laboriosam officiis quam rem!
+          Bem-vindo à Pizzaria Don Fulano, onde a paixão pela pizza se encontra com a tradição familiar! Localizada no coração da cidade, nossa pizzaria é um verdadeiro refúgio para os amantes de uma boa massa e ingredientes frescos.
           </p>
-          <p>At consectetur delectus ducimus est facere iure molestias obcaecati quaerat vitae voluptate? Aspernatur dolor explicabo iste minus molestiae pariatur provident quibusdam saepe?</p>
-          <p>Laborum molestias neque nulla obcaecati odio quia quod reprehenderit sit vitae voluptates? Eos, tenetur.</p>
+          <p>A Don Fulano foi fundada em 2020 por Fulano de Tal, um apaixonado por gastronomia que decidiu compartilhar suas receitas familiares com a comunidade. Desde o início, nosso objetivo tem sido oferecer uma experiência culinária autêntica, combinando receitas tradicionais italianas com toques inovadores que refletem o paladar brasileiro.</p>
+          <p>Cada pizza é feita com massa artesanal, preparada diariamente e assada em forno a lenha para garantir aquele sabor inconfundível. Utilizamos apenas ingredientes frescos e de alta qualidade, desde os tomates suculentos até os queijos selecionados.</p>
         </div>
       </section>
       <section className="text-center my-8" id="contact">
         <SectionHeaders
-          subHeader={'Don\'t hesitate'}
-          mainHeader={'Contact us'}
+          subHeader={'A gente não morde'}
+          mainHeader={'Entre em contato'}
         />
         <div className="mt-8">
-          <a className="text-4xl underline text-gray-500" href="tel:+46738123123">
-            +46 738 123 123
+          <a className="text-4xl underline text-gray-500" href="tel:1278434197">
+            12 7843 4197
           </a>
         </div>
       </section>
