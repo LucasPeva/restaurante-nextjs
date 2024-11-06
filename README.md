@@ -46,4 +46,4 @@ Código original feito por [Dawid Paszko](https://github.com/dejwid).
 
 [Link para tutorial em vídeo no Youtube](https://www.youtube.com/watch?v=nGoSP3MBV2E) *em inglês*
 
-Tradução feita por [Lucas Soares Pevarello](https://github.com/LucasPeva) e [Marcelo Soares Pevarello](email:marceloelucaspevarello@gmail.com)
+Tradução feita por [Lucas Soares Pevarello](https://github.com/LucasPeva) e [Marcelo Soares Pevarello](https://github.com/drkzinnnn)
