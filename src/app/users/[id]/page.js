@@ -45,7 +45,7 @@ export default function EditUserPage() {
   }
 
   if (!data.admin) {
-    return 'Not an admin';
+    return 'Não é um admin';
   }
 
   return (

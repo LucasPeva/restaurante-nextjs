@@ -46,10 +46,10 @@ export default function CategoriesPage() {
     });
     await toast.promise(creationPromise, {
       loading: editedCategory
-                 ? 'Updating category...'
-                 : 'Creating your new category...',
-      success: editedCategory ? 'Category updated' : 'Category created',
-      error: 'Error, sorry...',
+                 ? 'Atualizando categoria...'
+                 : 'Criando sua nova categoria...',
+      success: editedCategory ? 'Categoria atualizada' : 'Categoria criada',
+      error: 'Algo deu errado...',
     });
   }
 
@@ -66,20 +66,20 @@ export default function CategoriesPage() {
     });
 
     await toast.promise(promise, {
-      loading: 'Deleting...',
-      success: 'Deleted',
-      error: 'Error',
+      loading: 'Deletando...',
+      success: 'Deletado',
+      error: 'Erro',
     });
 
     fetchCategories();
   }
 
   if (profileLoading) {
-    return 'Loading user info...';
+    return 'Carregando informação de usuário...';
   }
 
   if (!profileData.admin) {
-    return 'Not an admin';
+    return 'Não é um admin.';
   }
 
   return (
@@ -89,7 +89,7 @@ export default function CategoriesPage() {
         <div className="flex gap-2 items-end">
           <div className="grow">
             <label>
-              {editedCategory ? 'Update category' : 'New category name'}
+              {editedCategory ? 'Atualizar categoria' : 'Nome da nova categoria'}
               {editedCategory && (
                 <>: <b>{editedCategory.name}</b></>
               )}
@@ -101,7 +101,7 @@ export default function CategoriesPage() {
           </div>
           <div className="pb-2 flex gap-2">
             <button className="border border-primary" type="submit">
-              {editedCategory ? 'Update' : 'Create'}
+              {editedCategory ? 'Atualizar' : 'Criar'}
             </button>
             <button
               type="button"
@@ -109,13 +109,13 @@ export default function CategoriesPage() {
                 setEditedCategory(null);
                 setCategoryName('');
               }}>
-              Cancel
+              Cancelar
             </button>
           </div>
         </div>
       </form>
       <div>
-        <h2 className="mt-8 text-sm text-gray-500">Existing categories</h2>
+        <h2 className="mt-8 text-sm text-gray-500">Categorias disponíveis</h2>
         {categories?.length > 0 && categories.map(c => (
           <div
             key={c._id}
@@ -130,10 +130,10 @@ export default function CategoriesPage() {
                         setCategoryName(c.name);
                       }}
               >
-                Edit
+                Editar
               </button>
               <DeleteButton
-                label="Delete"
+                label="Deletar"
                 onDelete={() => handleDeleteClick(c._id)} />
             </div>
           </div>

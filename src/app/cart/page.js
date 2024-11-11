@@ -17,7 +17,7 @@ export default function CartPage() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       if (window.location.href.includes('canceled=1')) {
-        toast.error('Payment failed 😔');
+        toast.error('Falha no pagamento 😔');
       }
     }
   }, []);
@@ -66,9 +66,9 @@ export default function CartPage() {
     });
 
     await toast.promise(promise, {
-      loading: 'Preparing your order...',
-      success: 'Redirecting to payment...',
-      error: 'Something went wrong... Please try again later',
+      loading: 'Preparando seu pedido...',
+      success: 'Redirecionando para a tela de pagamento...',
+      error: 'Algo deu errado... Tente novamente mais tarde',
     })
   }
 
@@ -84,7 +84,7 @@ export default function CartPage() {
   return (
     <section className="mt-8">
       <div className="text-center">
-        <SectionHeaders mainHeader="Cart" />
+        <SectionHeaders mainHeader="Carrinho" />
       </div>
       <div className="mt-8 grid gap-8 grid-cols-2">
         <div>
@@ -105,9 +105,9 @@ export default function CartPage() {
               Total:
             </div>
             <div className="font-semibold pl-2 text-right">
-              ${subtotal}<br />
-              $5<br />
-              ${subtotal + 5}
+              R${subtotal}<br />
+              R$5<br />
+              R${subtotal + 5}
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@ export default function CartPage() {
               addressProps={address}
               setAddressProp={handleAddressChange}
             />
-            <button type="submit">Pay ${subtotal+5}</button>
+            <button type="submit">Pagar R${subtotal+5}</button>
           </form>
         </div>
       </div>

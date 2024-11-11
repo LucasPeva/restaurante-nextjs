@@ -38,10 +38,11 @@ export default function OrderPage() {
   return (
     <section className="max-w-2xl mx-auto mt-8">
       <div className="text-center">
-        <SectionHeaders mainHeader="Your order" />
+        <SectionHeaders mainHeader="Seu pedido" />
         <div className="mt-4 mb-8">
-          <p>Thanks for your order.</p>
-          <p>We will call you when your order will be on the way.</p>
+          <p>Obrigado por fazer um pedido!</p>
+          <p>Seu pedido está sendo preparado e sairá para entrega em breve.</p>
+          <p>Fique atento ao telefone registrado para mais informações.</p>
         </div>
       </div>
       {loadingOrder && (
