@@ -40,10 +40,10 @@ export default function UserForm({user,onSave}) {
         }
       >
         <label>
-          First and last name
+          Primeiro e Último nome
         </label>
         <input
-          type="text" placeholder="First and last name"
+          type="text" placeholder="Primeiro e Último nome"
           value={userName} onChange={ev => setUserName(ev.target.value)}
         />
         <label>Email</label>
