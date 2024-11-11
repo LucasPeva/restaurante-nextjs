@@ -35,8 +35,8 @@ export default function RegisterPage() {
       </h1>
       {userCreated && (
         <div className="my-4 text-center">
-          User created.<br />
-          Now you can{' '}
+          Conta criada.<br />
+          Entre em{' '}
           <Link className="underline" href={'/login'}>Login &raquo;</Link>
         </div>
       )}

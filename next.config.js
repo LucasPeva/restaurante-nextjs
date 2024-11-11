@@ -8,7 +8,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'dawid-food-ordering.s3.amazonaws.com',
+        hostname: 'restaurante-pedidos.s3.amazonaws.com',
       },
     ]
   }

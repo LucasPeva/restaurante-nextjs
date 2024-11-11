@@ -73,7 +73,7 @@ export default function MenuItem(menuItem) {
               </p>
               {sizes?.length > 0 && (
                 <div className="py-2">
-                  <h3 className="text-center text-gray-700">Pick your size</h3>
+                  <h3 className="text-center text-gray-700">Escolha o tamanho</h3>
                   {sizes.map(size => (
                     <label
                       key={size._id}
@@ -83,14 +83,14 @@ export default function MenuItem(menuItem) {
                         onChange={() => setSelectedSize(size)}
                         checked={selectedSize?.name === size.name}
                         name="size"/>
-                      {size.name} ${basePrice + size.price}
+                      {size.name} R${basePrice + size.price}
                     </label>
                   ))}
                 </div>
               )}
               {extraIngredientPrices?.length > 0 && (
                 <div className="py-2">
-                  <h3 className="text-center text-gray-700">Any extras?</h3>
+                  <h3 className="text-center text-gray-700">Algum adicional?</h3>
                   {extraIngredientPrices.map(extraThing => (
                     <label
                       key={extraThing._id}
@@ -111,13 +111,13 @@ export default function MenuItem(menuItem) {
                 src={image}>
                 <div className="primary sticky bottom-2"
                      onClick={handleAddToCartButtonClick}>
-                  Add to cart ${selectedPrice}
+                  Adicionar ao carrinho R${selectedPrice}
                 </div>
               </FlyingButton>
               <button
                 className="mt-2"
                 onClick={() => setShowPopup(false)}>
-                Cancel
+                Cancelar
               </button>
             </div>
           </div>

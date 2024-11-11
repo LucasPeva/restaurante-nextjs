@@ -18,11 +18,11 @@ export default function UsersPage() {
   }, []);
 
   if (loading) {
-    return 'Loading user info...';
+    return 'Carregando informação de usuário...';
   }
 
   if (!data.admin) {
-    return 'Not an admin';
+    return 'Não é um admin';
   }
 
   return (

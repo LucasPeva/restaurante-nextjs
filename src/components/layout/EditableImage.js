@@ -18,13 +18,13 @@ export default function EditableImage({link, setLink}) {
             setLink(link);
           })
         }
-        throw new Error('Something went wrong');
+        throw new Error('Algo deu errado');
       });
 
       await toast.promise(uploadPromise, {
-        loading: 'Uploading...',
-        success: 'Upload complete',
-        error: 'Upload error',
+        loading: 'Enviando...',
+        success: 'Envio completo',
+        error: 'Erro no envio',
       });
     }
   }
@@ -36,7 +36,7 @@ export default function EditableImage({link, setLink}) {
       )}
       {!link && (
         <div className="text-center bg-gray-200 p-4 text-gray-500 rounded-lg mb-1">
-          No image
+          Sem imagem
         </div>
       )}
       <label>

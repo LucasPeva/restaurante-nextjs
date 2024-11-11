@@ -76,11 +76,11 @@ export default function EditMenuItemPage() {
   }
 
   if (loading) {
-    return 'Loading user info...';
+    return 'Carregando informação de usuário...';
   }
 
   if (!data.admin) {
-    return 'Not an admin.';
+    return 'Não é um admin.';
   }
 
   return (
@@ -89,14 +89,14 @@ export default function EditMenuItemPage() {
       <div className="max-w-2xl mx-auto mt-8">
         <Link href={'/menu-items'} className="button">
           <Left />
-          <span>Show all menu items</span>
+          <span>Mostrar todos os itens</span>
         </Link>
       </div>
       <MenuItemForm menuItem={menuItem} onSubmit={handleFormSubmit} />
       <div className="max-w-md mx-auto mt-2">
         <div className="max-w-xs ml-auto pl-4">
           <DeleteButton
-            label="Delete this menu item"
+            label="Apagar este item do menu"
             onDelete={handleDeleteClick}
           />
         </div>
